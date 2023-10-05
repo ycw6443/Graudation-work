@@ -17,7 +17,7 @@ body {
 /* Book */
 .book {
     position: relative;
-    width: 550px;
+    width: 750px;
     height: 700px;
     transition: transform 0.5s;
 }
@@ -67,25 +67,45 @@ body {
 }
 
 .main-img{
-    width: 550px;
+    width: 750px;
     height: 700px;
     border-radius: 10px;
 }
 
 .sub-img{
     width: 270px;
-    height: 320px;
+    height: 354px;
     border-radius: 10px;
     position: absolute;
+    float: left;
     top: 0;
     left: 0;
 }
 
 .name{
     position: absolute;
+    float: right;
     font-size: 50px;
-    top: 280px;
+    color: black;
+    top: 0;
+    right: 143px;
     
+}
+
+.recipe{
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    top: 80px;
+    right: 45px;
+    left: 285px;
+}
+
+.story{
+    position: absolute;
+    font-size: 27px;
+    left: 10px;
+    top: 400px;
 }
 
 /* Paper flip effect */
@@ -143,4 +163,10 @@ i {
 }
 #p9 {
     z-index: 1;
+}
+
+
+
+.test{
+    display: inline-block;
 }
