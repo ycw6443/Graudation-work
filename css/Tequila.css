@@ -96,9 +96,15 @@ body {
     position: absolute;
     font-size: 22px;
     text-align: center;
-    top: 80px;
+    top: 75px;
     right: 45px;
-    left: 285px;
+    left: 290px;
+    border: 1px solid black;
+    width: 440px;
+    height: 280px;
+}
+tr,td{
+    border: 1px solid black;
 }
 
 .story{
