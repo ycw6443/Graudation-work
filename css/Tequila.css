@@ -71,8 +71,8 @@ body {
     height: 700px;
     border-radius: 10px;
 }
-
-.sub-img{
+/* 칵테일 이미지 */
+.sub-img-left{
     width: 270px;
     height: 354px;
     border-radius: 10px;
@@ -82,7 +82,18 @@ body {
     left: 0;
 }
 
-.name{
+.sub-img-right{
+    width: 270px;
+    height: 354px;
+    border-radius: 10px;
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+/* 칵테일 제목 */
+.name-left{
     position: absolute;
     float: right;
     font-size: 50px;
@@ -92,20 +103,47 @@ body {
     
 }
 
-.recipe{
+.name-right{
+    position: absolute;
+    float: left;
+    font-size: 50px;
+    color: black;
+    top: 0;
+    left: 143px;
+    
+}
+
+/* 레시피 */
+.recipe-left{
     position: absolute;
     font-size: 22px;
     text-align: center;
     top: 75px;
     right: 45px;
     left: 290px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 440px;
     height: 280px;
 }
-tr,td{
-    border: 1px solid black;
+
+.recipe-right{
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    top: 75px;
+    left: 25px;
+    right: 290px;
+    /* border: 1px solid black; */
+    width: 440px;
+    height: 280px;
 }
+
+/* 레시피 소제목 */
+.recipe-sub-name{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 
 .story{
     position: absolute;
