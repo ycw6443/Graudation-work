@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -96,6 +97,7 @@ body {
 .name-left{
     position: absolute;
     float: right;
+    font-family: 'Gamja Flower', sans-serif;
     font-size: 50px;
     color: black;
     top: 0;
@@ -106,6 +108,7 @@ body {
 .name-right{
     position: absolute;
     float: left;
+    font-family: 'Gamja Flower', sans-serif;
     font-size: 50px;
     color: black;
     top: 0;
@@ -116,7 +119,8 @@ body {
 /* 레시피 */
 .recipe-left{
     position: absolute;
-    font-size: 22px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
     text-align: center;
     top: 75px;
     right: 45px;
@@ -128,7 +132,8 @@ body {
 
 .recipe-right{
     position: absolute;
-    font-size: 22px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
     text-align: center;
     top: 75px;
     left: 25px;
@@ -147,7 +152,8 @@ body {
 
 .story{
     position: absolute;
-    font-size: 27px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
     left: 10px;
     top: 400px;
 }
