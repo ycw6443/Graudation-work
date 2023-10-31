@@ -47,7 +47,7 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    border-left: 3px solid black;
 }
 
 .back {
@@ -215,8 +215,42 @@ i {
     z-index: 1;
 }
 
-
-
-.test{
-    display: inline-block;
+.c_img_left{
+    height: 580px;
+    width: 240px;
+    position: absolute;
+    float: right;
+    bottom: 30px;
+    right: 0;
+}
+.c_img_rigt{
+    height: 580px;
+    width: 240px;
+    position: absolute;
+    float: left;
+    bottom: 30px;
+    left: 0;
+}
+.name2{
+    position: absolute;
+    float: left;
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 50px;
+    color: black;
+    top: 0;
+    left: 143px;
+}
+.OLI{
+    position: absolute;
+    float: left;
+    top: 70px;
+    left: 40px;
+}
+.left_recipe{
+    position: absolute;
+    float: left;
+    left: 0;
+}
+.left_recipe>tr,td{
+    border: 1px solid black;
 }
