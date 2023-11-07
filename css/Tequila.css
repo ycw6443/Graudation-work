@@ -72,6 +72,8 @@ body {
     height: 700px;
     border-radius: 10px;
 }
+
+/* 1 Page */
 /* 칵테일 이미지 */
 .sub-img-left{
     width: 270px;
@@ -215,42 +217,91 @@ i {
     z-index: 1;
 }
 
+/* 2 Page */
 .c_img_left{
-    height: 580px;
+    height: 560px;
     width: 240px;
     position: absolute;
     float: right;
-    bottom: 30px;
+    bottom: 20px;
     right: 0;
 }
 .c_img_rigt{
-    height: 580px;
+    height: 560px;
     width: 240px;
     position: absolute;
     float: left;
-    bottom: 30px;
+    bottom: 20px;
     left: 0;
 }
 .name2{
     position: absolute;
     float: left;
     font-family: 'Gamja Flower', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     color: black;
     top: 0;
-    left: 143px;
+    left: 50px;
 }
 .OLI{
     position: absolute;
     float: left;
+    font-size: 40px;
+    font-family: 'Cute Font', sans-serif;
     top: 70px;
-    left: 40px;
+    left: 20px;
 }
 .left_recipe{
     position: absolute;
+    width: 450px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 38px;
+    text-align: center;
     float: left;
+    left: 10px;
+}
+.right_recipe{
+    position: absolute;
+    width: 450px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    float: right;
+    right: 10px;
+}
+.content-2page{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 3 Page */
+.side-img{
+    width: 340px;
+    height: 700px;
+    position: relative;
     left: 0;
 }
-.left_recipe>tr,td{
-    border: 1px solid black;
+.name3{
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    font-size: 40px;
+}
+table{
+    font-size: 28px;
+    text-align: center;
+}
+.recipe-img1{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-radius: 20%;
+    top: 10px;
+    left: 10px;
+}
+.recipe-content1{
+    position: relative;
+    font-size: 20px;
 }
