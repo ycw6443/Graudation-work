@@ -294,7 +294,9 @@ table{
     text-align: center;
 }
 .recipe-img1{
-    position: relative;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
     width: 250px;
     height: 150px;
     border-radius: 20%;
@@ -302,6 +304,9 @@ table{
     left: 10px;
 }
 .recipe-content1{
-    position: relative;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
     font-size: 20px;
+    left: 20px;
 }
