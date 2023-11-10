@@ -286,27 +286,36 @@ i {
 .name3{
     position: absolute;
     top: 20px;
-    right: 150px;
+    right: 120px;
     font-size: 40px;
 }
-table{
+.p3-recipe{
+    /* position: absolute; */
     font-size: 28px;
     text-align: center;
+    width: 350px;
+}
+.p3-content{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 .recipe-img1{
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
-    width: 250px;
+    width: 300px;
     height: 150px;
     border-radius: 20%;
-    top: 10px;
-    left: 10px;
+    padding-right: 30px;
+}
+.recipe-img2{
+    width: 300px;
+    height: 150px;
+    border-radius: 20%;
+    padding-left: 30px;
 }
 .recipe-content1{
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    left: 20px;
+    font-size: 25px;
+}
+.p5-story{
+    position: absolute;
+    top: 30px;
 }
