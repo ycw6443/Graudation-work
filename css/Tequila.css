@@ -290,7 +290,6 @@ i {
     font-size: 40px;
 }
 .p3-recipe{
-    /* position: absolute; */
     font-size: 28px;
     text-align: center;
     width: 350px;
@@ -315,7 +314,48 @@ i {
 .recipe-content1{
     font-size: 25px;
 }
-.p5-story{
+/* 4 Page */
+.p4-story{
     position: absolute;
     top: 30px;
+    left: 10px;
+    font-size: 20px;
+}
+.p4-story>h1{
+    margin-bottom: 30px;
+}
+.p4-img{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -200px;
+}
+
+/* 5 Page */
+.p5-img{
+    width: 700px;
+    height: 700px;
+}
+.p5-story{
+    position: absolute;
+    width: 550px;
+    left: 30px;
+    top: 50px;
+}
+.p5-recipe{
+    position: absolute;
+    width: 550px;
+    left: 30px;
+    bottom: 50px;
+}
+.p5-IGD{
+    position: absolute;
+    right: 20px;
+}
+.p5-IGD>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
