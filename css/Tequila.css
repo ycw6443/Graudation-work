@@ -114,7 +114,7 @@ body {
     font-size: 50px;
     color: black;
     top: 0;
-    left: 143px;
+    left: 12%;
     
 }
 
@@ -190,30 +190,24 @@ i {
 
 /* Paper stack order */
 #p1 {
-    z-index: 9;
-}
-#p2 {
-    z-index: 8;
-}
-#p3 {
     z-index: 7;
 }
-#p4 {
+#p2 {
     z-index: 6;
 }
-#p5 {
+#p3 {
     z-index: 5;
 }
-#p6 {
+#p4 {
     z-index: 4;
 }
-#p7 {
+#p5 {
     z-index: 3;
 }
-#p8 {
+#p6 {
     z-index: 2;
 }
-#p9 {
+#p7 {
     z-index: 1;
 }
 
@@ -358,4 +352,14 @@ i {
     width: 150px;
     height: 150px;
     border-radius: 10px;
+}
+.back-title{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.back-story{
+    position: relative;
+    font-size: 21px;
+    font-family: sans-serif;
 }
