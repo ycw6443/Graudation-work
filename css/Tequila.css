@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: sans-serif;
     background-color: powderblue;
 }
@@ -190,34 +189,32 @@ i {
 
 /* Paper stack order */
 #p1 {
-    z-index: 7;
-}
-#p2 {
     z-index: 6;
 }
-#p3 {
+#p2 {
     z-index: 5;
 }
-#p4 {
+#p3 {
     z-index: 4;
 }
-#p5 {
+#p4 {
     z-index: 3;
 }
-#p6 {
+#p5 {
     z-index: 2;
 }
-#p7 {
+#p6 {
     z-index: 1;
 }
 
+
 /* 2 Page */
 .c_img_left{
-    height: 560px;
-    width: 240px;
+    height: 330px;
+    width: 140px;
     position: absolute;
     float: right;
-    bottom: 20px;
+    bottom: 135px;
     right: 0;
 }
 .c_img_rigt{
@@ -281,10 +278,12 @@ i {
     position: absolute;
     top: 20px;
     right: 120px;
-    font-size: 40px;
+    font-size: 80px;
+    font-family: 'Cute Font', sans-serif;
 }
 .p3-recipe{
-    font-size: 28px;
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
     text-align: center;
     width: 350px;
 }
@@ -306,7 +305,8 @@ i {
     padding-left: 30px;
 }
 .recipe-content1{
-    font-size: 25px;
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
 }
 /* 4 Page */
 .p4-story{
@@ -314,9 +314,16 @@ i {
     top: 30px;
     left: 10px;
     font-size: 20px;
+    
 }
 .p4-story>h1{
+    background-color: #FFD503;
+    font-family: 'Cute Font', sans-serif;
     margin-bottom: 30px;
+}
+.p4-story>p{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
 }
 .p4-img{
     position: absolute;
@@ -333,16 +340,24 @@ i {
     height: 700px;
 }
 .p5-story{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
     position: absolute;
     width: 550px;
     left: 30px;
     top: 50px;
 }
 .p5-recipe{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
     position: absolute;
     width: 550px;
     left: 30px;
     bottom: 50px;
+}
+.p5-story>h1{
+    background-color: pink;
+    padding-left: 10px;
 }
 .p5-IGD{
     position: absolute;
@@ -350,16 +365,25 @@ i {
 }
 .p5-IGD>img{
     width: 150px;
-    height: 150px;
+    height: 140px;
     border-radius: 10px;
 }
-.back-title{
-    position: absolute;
-    top: 10%;
-    left: 5%;
+.p5-IGD>p{
+    font-size: 20px;
+    font-family: 'Cute Font', sans-serif;
+    text-align: center;
 }
 .back-story{
     position: relative;
-    font-size: 21px;
-    font-family: sans-serif;
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+}
+.back-content>h1{
+    position: absolute;
+    background-color: #D69C04;
+    font-family: 'Cute Font', sans-serif;;
+    font-size: 40px;
+    padding: 10px 20px;
+    top: 5%;
+    left: 5%;
 }
