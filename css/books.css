@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: powderblue;
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 750px;
+    height: 700px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-image: url(../img/main_img/paper.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid black;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+.main-img{
+    width: 750px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+/* 1 Page */
+/* 칵테일 이미지 */
+.sub-img-left{
+    width: 270px;
+    height: 354px;
+    border-radius: 10px;
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+}
+
+.sub-img-right{
+    width: 270px;
+    height: 354px;
+    border-radius: 10px;
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+/* 칵테일 제목 */
+.name-left{
+    position: absolute;
+    float: right;
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 50px;
+    color: black;
+    top: 0;
+    right: 143px;
+    
+}
+
+.name-right{
+    position: absolute;
+    float: left;
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 50px;
+    color: black;
+    top: 0;
+    left: 100px;
+    
+}
+
+/* 레시피 */
+.recipe-left{
+    position: absolute;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    top: 75px;
+    right: 45px;
+    left: 290px;
+    /* border: 1px solid black; */
+    width: 440px;
+    height: 280px;
+}
+
+.recipe-right{
+    position: absolute;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    top: 75px;
+    left: 25px;
+    right: 290px;
+    /* border: 1px solid black; */
+    width: 440px;
+    height: 280px;
+}
+
+/* 레시피 소제목 */
+.recipe-sub-name{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.story{
+    position: absolute;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 30px;
+    left: 10px;
+    top: 400px;
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 6;
+}
+#p2 {
+    z-index: 5;
+}
+#p3 {
+    z-index: 4;
+}
+#p4 {
+    z-index: 3;
+}
+#p5 {
+    z-index: 2;
+}
+#p6 {
+    z-index: 1;
+}
+
+
+/* 2 Page */
+.c_img_left{
+    height: 330px;
+    width: 140px;
+    position: absolute;
+    float: right;
+    bottom: 135px;
+    right: 0;
+}
+.c_img_rigt{
+    height: 560px;
+    width: 240px;
+    position: absolute;
+    float: left;
+    bottom: 20px;
+    left: 0;
+}
+.name2{
+    position: absolute;
+    float: left;
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 60px;
+    color: black;
+    top: 0;
+    left: 50px;
+}
+.OLI{
+    position: absolute;
+    float: left;
+    font-size: 40px;
+    font-family: 'Cute Font', sans-serif;
+    top: 70px;
+    left: 20px;
+}
+.left_recipe{
+    position: absolute;
+    width: 450px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    float: left;
+    left: 10px;
+}
+.right_recipe{
+    position: absolute;
+    width: 450px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    float: right;
+    right: 10px;
+}
+.content-2page{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 3 Page */
+.side-img{
+    width: 340px;
+    height: 700px;
+    position: relative;
+    left: 0;
+}
+.name3{
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    font-size: 80px;
+    font-family: 'Cute Font', sans-serif;
+}
+.p3-recipe{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+    text-align: center;
+    width: 350px;
+}
+.p3-content{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.recipe-img1{
+    width: 300px;
+    height: 150px;
+    border-radius: 20%;
+    padding-right: 30px;
+}
+.recipe-img2{
+    width: 300px;
+    height: 150px;
+    border-radius: 20%;
+    padding-left: 30px;
+}
+.recipe-content1{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+}
+/* 4 Page */
+.p4-story{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 20px;
+    
+}
+.p4-story>h1{
+    background-color: #FFD503;
+    font-family: 'Cute Font', sans-serif;
+    margin-bottom: 30px;
+}
+.p4-story>p{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+}
+.p4-img{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -200px;
+}
+
+/* 5 Page */
+.p5-img{
+    width: 700px;
+    height: 700px;
+}
+.p5-story{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+    position: absolute;
+    width: 550px;
+    left: 30px;
+    top: 50px;
+}
+.p5-recipe{
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+    position: absolute;
+    width: 550px;
+    left: 30px;
+    bottom: 50px;
+}
+.p5-story>h1{
+    background-color: pink;
+    padding-left: 10px;
+}
+.p5-IGD{
+    position: absolute;
+    right: 20px;
+}
+.p5-IGD>img{
+    width: 150px;
+    height: 140px;
+    border-radius: 10px;
+}
+.p5-IGD>p{
+    font-size: 20px;
+    font-family: 'Cute Font', sans-serif;
+    text-align: center;
+}
+.back-story{
+    position: relative;
+    font-size: 35px;
+    font-family: 'Cute Font', sans-serif;
+}
+.back-content>h1{
+    position: absolute;
+    background-color: #D69C04;
+    font-family: 'Cute Font', sans-serif;;
+    font-size: 40px;
+    padding: 10px 20px;
+    top: 5%;
+    left: 5%;
+}
