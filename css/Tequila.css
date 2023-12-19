@@ -210,11 +210,11 @@ i {
 
 /* 2 Page */
 .c_img_left{
-    height: 330px;
-    width: 140px;
+    height: 560px;
+    width: 240px;
     position: absolute;
     float: right;
-    bottom: 135px;
+    bottom: 20px;
     right: 0;
 }
 .c_img_rigt{
