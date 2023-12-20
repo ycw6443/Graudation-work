@@ -11,7 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background-color: powderblue;
+    background-image: url(../img/main_img/배경.jpg);
+    background-size: cover;
 }
 
 /* Book */

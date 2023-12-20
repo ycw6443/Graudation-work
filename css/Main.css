@@ -2,7 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url(../img/main_img/);
+    background-image: url(../img/main_img/배경.jpg);
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -11,16 +12,45 @@ body, html {
 
 .sidebar {
     width: 100px;
-    background-color: #333;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column; /* 세로로 정렬 */
     align-items: center; /* 가운데 정렬 */
-    padding-top: 20px; /* 여백 추가 */
+    padding-top: 95px; /* 여백 추가 */
 }
 
-.siteButton {
+.siteButton{
     margin-bottom: 10px; /* 각 버튼 사이 간격 조절 */
+    background: none; /* 배경 없애기 */
+    border: none; /* 테두리 없애기 */
+    color: white; /* 버튼 텍스트 색상 변경 */
+    cursor: pointer;
+}
+.siteButton:focus {
+    /* 포커스 효과 제거 */
+    outline: none; 
+}
+.siteButton>img{
+    width: 80px;
+    height: 120px;
+}
+/* 이전 CSS 부분을 덮어씌우기 위해 수정된 부분만 기재합니다. */
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    background: none; /* 배경 없애기 */
+    border: none; /* 테두리 없애기 */
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#closeButton:focus {
+    outline: none; /* 포커스 효과 제거 */
 }
 
 .main-content {
