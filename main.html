@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>HomeTending</title>
+    <title>여러 사이트를 열 수 있는 사이드바</title>
+    <link rel="stylesheet" href="css/Main.css">
 </head>
 <body>
 
+<div class="container">
+    <div class="sidebar">
+        <button class="siteButton" data-url="html/Tequila.html">Tequila</button>
+        <button class="siteButton" data-url="html/Rum.html">Rum</button>
+        <button class="siteButton" data-url="html/Brandy.html">Brandy</button>
+        <button class="siteButton" data-url="html/vodka.html">vodka</button>
+        <button class="siteButton" data-url="html/whiskey.html">whiskey</button>
+    <!-- 나머지 사이트 버튼들도 동일한 방식으로 추가 -->
+    </div>
+    <div class="main-content">
+        <iframe id="siteFrame" src="" frameborder="0"></iframe>
+        <button id="closeButton">닫기</button>
+    </div>
+</div>
+
+<script src="js/Main.js"></script>
 </body>
 </html>
